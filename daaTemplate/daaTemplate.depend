@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1484287912 source:/home/mnit/Desktop/raja/daaTemplate/main.c
+	<stdio.h>
+	<stdlib.h>
+
