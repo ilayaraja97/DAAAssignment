@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    freopen("main.c","r",stdin);
+    //freopen("output.txt","w",stdout);
+    char s[100];
+    while(feof(stdin))
+    {
+    	scanf(" %[^\n]s",s);
+    	printf("%s\n",s);
+    }
+    return 0;
+}
