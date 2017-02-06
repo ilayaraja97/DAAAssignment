@@ -1,4 +1,5 @@
-DAA Lab 0
+# Lab 0
+------
 
 1. wap which takes input from a file and this input is a set of integer numbers you have to sort these numbers and store the O/P in a file.
 
