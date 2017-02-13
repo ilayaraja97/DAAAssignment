@@ -1,0 +1,3 @@
+depth = 4
+total nodes = 14
+leaf nodes = 7

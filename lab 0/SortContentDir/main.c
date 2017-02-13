@@ -29,7 +29,7 @@ int main(int argv,char *args[])
         int ext=strlen(filename)-4;//a
         if(strcmp(".txt",filename+ext)==0||strcmp(".dat",filename+ext)==0)
         {
-            sprintf(cmd,"sort \"$HOME/%s/%s\" -o \"$HOME/%s Sorted/%s\"",args[1],filename,args[1],filename);
+            sprintf(cmd,"sort -n \"$HOME/%s/%s\" -o \"$HOME/%s Sorted/%s\"",args[1],filename,args[1],filename);
             system(cmd);
         }
         strcpy(f1,filename);

@@ -48,7 +48,7 @@ void quickSort(int *a,int start,int end,int mode)
     {
         int pivot=partition(a,start,end,mode);
         steps++;
-        quickSort(a,start,pivot-1,mode);
+        quickSort(a,start,pivot,mode);
         steps++;
         quickSort(a,pivot,end,mode);
         steps++;
@@ -57,28 +57,51 @@ void quickSort(int *a,int start,int end,int mode)
 
 int main()
 {
-    int a[9]={54,26,93,17,77,31,44,55,20},i;
-    quickSort(a,0,9,0);
-    for(i=0;i<9;i++)
+	freopen("output.txt","w",stdout);
+	freopen("input.txt","r",stdin);
+	int n;
+	scanf("%d",&n);
+    int *a=(int*)malloc(n*sizeof(int)),i;
+    for(i=0;i<n;i++)
+    {
+		scanf("%d",&a[i]);
+	}
+    quickSort(a,0,n,0);
+    for(i=0;i<n;i++)
     {
         printf("%d ",a[i]);
     }
     printf("\nsteps : %d\n",steps-1);
+    free(a);
     steps=1;
-    int b[9]={54,26,93,17,77,31,44,55,20};
-    quickSort(b,0,9,1);
-    for(i=0;i<9;i++)
+    freopen("input.txt","r",stdin);
+	scanf("%d",&n);
+    a=(int*)malloc(n*sizeof(int));
+    for(i=0;i<n;i++)
     {
-        printf("%d ",b[i]);
+		scanf("%d",&a[i]);
+	}
+    quickSort(a,0,n,1);
+    for(i=0;i<n;i++)
+    {
+        printf("%d ",a[i]);
     }
     printf("\nsteps : %d\n",steps-1);
+    free(a);
     steps=1;
-    int c[9]={54,26,93,17,77,31,44,55,20};
-    quickSort(c,0,9,2);
-    for(i=0;i<9;i++)
+    freopen("input.txt","r",stdin);
+	scanf("%d",&n);
+    a=(int*)malloc(n*sizeof(int));
+    for(i=0;i<n;i++)
     {
-        printf("%d ",c[i]);
+		scanf("%d",&a[i]);
+	}
+    quickSort(a,0,n,2);
+    for(i=0;i<n;i++)
+    {
+        printf("%d ",a[i]);
     }
     printf("\nsteps : %d\n",steps-1);
+    free(a);
     return 0;
 }
