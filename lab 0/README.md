@@ -5,3 +5,6 @@
 
 
 2. wap which takes name of directory from cmd line and sorts content of all files and saves to a new directory.
+
+### Answer format
+

@@ -4,7 +4,7 @@
 int main()
 {
     freopen("input.txt","r",stdin);
-    //freopen("output.txt","w",stdout);
+    freopen("output.txt","w",stdout);
     int m,n,p,*a,*b,*c,i,mi,ni,pi;
     scanf("%d %d %d",&m,&n,&p);
     a=(int *)calloc(m+7,sizeof(int));

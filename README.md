@@ -9,9 +9,14 @@ Git repository which contains solutions of all DAA Lab Assignments of 4th semest
   	* PrintItself
   	* WithoutSemicolon
   * Lab 2
+	* BTree
+	* InPostPreOrder
+	* MastersMethod
   * Lab 3
   	* QuickSort
   * Lab 4
+	* BucketSort
+	* CountSort
+	* RadixSort
   * Lab 5
   * Lab 6
-  
